@@ -1,10 +1,10 @@
 // components
-import Homepage from './Homepage';
+import Homepage from './pages/Homepage/Homepage';
 
 // styles
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
      <Homepage />
