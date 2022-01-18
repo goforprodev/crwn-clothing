@@ -1,3 +1,4 @@
+import React from 'react';
 // components
 import Directory from '../../components/Directory/Directory'
 // styles
