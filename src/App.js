@@ -2,10 +2,11 @@ import React from 'react';
 // components
 import Homepage from './pages/Homepage/Homepage';
 // routing
-import {Routes,Route } from 'react-router-dom';
+import {Switch,Route } from 'react-router-dom';
 // styles
 import './App.css';
-const Hats = () => {
+const Hats = (props) => {
+  console.log(props)
   return(
     <div>Hats page</div> 
   )
@@ -14,12 +15,12 @@ const App = () => {
   return (
     <div className="App">
 
-    <Routes>
-    <Route exact path='/' element={<Homepage/>} />
-    <Route path="/hats" element={<Hats/>}/>
-    </Routes>
+    <Switch>
+    <Route path='/'exact component={Homepage} />
+    <Route path="/hats" component={Hats}/>
+    </Switch>
     </div>
   );
 }
 
-export default App;
+export default App ;
