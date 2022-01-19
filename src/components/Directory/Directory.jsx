@@ -4,21 +4,15 @@ import React from 'react';
 import MenuItem from '../MenuItems/MenuItems'
 
 // utils
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import SECTION from './utils'
 // styles
 import './Directory.scss'
 
 const Directory = () => {
-    const [section,setSection] = useState([])
+    const [section] = useState(SECTION)
 
-    useEffect(() => {
-        const mountSection = () => {
-            setSection(SECTION)
-        }
 
-        mountSection()
-    },[])
     return(
         <div className="directory-menu">
             {
