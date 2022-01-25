@@ -1,0 +1,15 @@
+.sign-in-container{
+    width:35vw; 
+    // display:grid;
+    // place-items: center;
+
+    // background: red;
+    .title{
+        margin: 10px 0;
+    }
+}    
+.buttons{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
